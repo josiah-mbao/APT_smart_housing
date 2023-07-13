@@ -25,14 +25,14 @@ namespace smarthomesui
         private void button1_Click(object sender, EventArgs e)
         {
             
-            if (userName.Text == "" && password.Text == "" && firstName.Text == "" && lastName.Text == "" && eMail.Text == "" && confirmPassword.Text == "" && phoneNo.Text == "")
+            if (userName.Text == "" && password.Text == "" && firstName.Text == "" && lastName.Text == "" && eMail.Text == "" && confirmPassword.Text == "" && phoneNo.Text == "" && studentID.Text == "")
             {
                 MessageBox.Show("Sign up failed", "Fill all the fields", MessageBoxButtons.OK, MessageBoxIcon.Error);
             }
             else if (password.Text == confirmPassword.Text)
             {
                 con.Open();
-                string register = "INSERT INTO user_table VALUES ('" + userName.Text + "','" + password.Text + "','" + firstName.Text + "','" + lastName.Text + "','" + eMail.Text + "','" + phoneNo.Text + "')";
+                string register = "INSERT INTO User_table (First_Name, Last_Name, Email, Phone_No, Student_ID, Username, [Password]) VALUES ('" + firstName.Text + "', '" + lastName.Text + "', '" + eMail.Text + "','" + phoneNo.Text + "', '" + studentID.Text + "', '" + userName.Text + "','" + password.Text + "')";
                 cmd = new OleDbCommand(register, con);
                 cmd.ExecuteNonQuery();
                 con.Close();
@@ -40,6 +40,9 @@ namespace smarthomesui
 
 
                 MessageBox.Show("Your account has been successfully created", "Registration Successfull", MessageBoxButtons.OK, MessageBoxIcon.Information);
+
+                new home_page().Show();
+                this.Hide();
             }
 
             else
@@ -62,7 +65,7 @@ namespace smarthomesui
 
         private void linkLabel1_LinkClicked(object sender, LinkLabelLinkClickedEventArgs e)
         {
-            new login().Show();
+            new Login().Show();
             this.Hide();
         }
     }

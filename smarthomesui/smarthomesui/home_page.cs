@@ -42,7 +42,7 @@ namespace smarthomesui
 
         }
 
-        private void profileButton_Click(object sender, EventArgs e)
+        private void homeButton_Click(object sender, EventArgs e)
         {
 
         }

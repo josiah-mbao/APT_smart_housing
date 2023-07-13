@@ -157,6 +157,7 @@ namespace smarthomesui
             this.panel1.Name = "panel1";
             this.panel1.Size = new System.Drawing.Size(633, 763);
             this.panel1.TabIndex = 12;
+            this.panel1.Paint += new System.Windows.Forms.PaintEventHandler(this.panel1_Paint);
             // 
             // Login
             // 
@@ -178,7 +179,7 @@ namespace smarthomesui
         private void button1_Click(object sender, EventArgs e)
         {
             con.Open();
-            string login = "SELECT * FROM user_table WHERE Username= '" + username.Text + "' and password= '" + password.Text;
+            string login = "SELECT * FROM User_table WHERE Username= '" + username.Text + "' and Password= '" + password.Text + "'";
             cmd = new OleDbCommand(login,con);
             OleDbDataReader dr = cmd.ExecuteReader();
 
@@ -187,9 +188,11 @@ namespace smarthomesui
                 new homepage().Show();
                 this.Hide();
             }
+
             else
             {
-                MessageBox.Show("Invalid Credentials. Try again", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                MessageBox.Show("Invalid Credentials. Try again");
+
                 username.Text = "";
                 password.Text = "";
                 username.Focus();
@@ -200,7 +203,7 @@ namespace smarthomesui
             {
                 MessageBox.Show("Username and Password fields are empty", "Sign in failed");
             }
-            
+            con.Close();
             
         }
 

@@ -48,6 +48,8 @@
             this.label1 = new System.Windows.Forms.Label();
             this.linkLabel1 = new System.Windows.Forms.LinkLabel();
             this.button1 = new System.Windows.Forms.Button();
+            this.studentID = new System.Windows.Forms.TextBox();
+            this.label9 = new System.Windows.Forms.Label();
             this.panel1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.SuspendLayout();
@@ -55,6 +57,8 @@
             // panel1
             // 
             this.panel1.BackColor = System.Drawing.SystemColors.ButtonHighlight;
+            this.panel1.Controls.Add(this.studentID);
+            this.panel1.Controls.Add(this.label9);
             this.panel1.Controls.Add(this.confirmPassword);
             this.panel1.Controls.Add(this.label8);
             this.panel1.Controls.Add(this.password);
@@ -75,12 +79,12 @@
             this.panel1.Controls.Add(this.button1);
             this.panel1.Location = new System.Drawing.Point(344, -35);
             this.panel1.Name = "panel1";
-            this.panel1.Size = new System.Drawing.Size(633, 763);
+            this.panel1.Size = new System.Drawing.Size(633, 833);
             this.panel1.TabIndex = 13;
             // 
             // confirmPassword
             // 
-            this.confirmPassword.Location = new System.Drawing.Point(296, 507);
+            this.confirmPassword.Location = new System.Drawing.Point(296, 555);
             this.confirmPassword.Multiline = true;
             this.confirmPassword.Name = "confirmPassword";
             this.confirmPassword.PasswordChar = '*';
@@ -91,7 +95,7 @@
             // 
             this.label8.AutoSize = true;
             this.label8.Font = new System.Drawing.Font("Arial", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label8.Location = new System.Drawing.Point(92, 508);
+            this.label8.Location = new System.Drawing.Point(92, 556);
             this.label8.Name = "label8";
             this.label8.Size = new System.Drawing.Size(141, 19);
             this.label8.TabIndex = 24;
@@ -99,7 +103,7 @@
             // 
             // password
             // 
-            this.password.Location = new System.Drawing.Point(296, 466);
+            this.password.Location = new System.Drawing.Point(296, 514);
             this.password.Multiline = true;
             this.password.Name = "password";
             this.password.PasswordChar = '*';
@@ -111,7 +115,7 @@
             // 
             this.label7.AutoSize = true;
             this.label7.Font = new System.Drawing.Font("Arial", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label7.Location = new System.Drawing.Point(150, 467);
+            this.label7.Location = new System.Drawing.Point(150, 515);
             this.label7.Name = "label7";
             this.label7.Size = new System.Drawing.Size(80, 19);
             this.label7.TabIndex = 22;
@@ -119,7 +123,7 @@
             // 
             // userName
             // 
-            this.userName.Location = new System.Drawing.Point(296, 428);
+            this.userName.Location = new System.Drawing.Point(296, 476);
             this.userName.Multiline = true;
             this.userName.Name = "userName";
             this.userName.Size = new System.Drawing.Size(193, 22);
@@ -129,7 +133,7 @@
             // 
             this.label6.AutoSize = true;
             this.label6.Font = new System.Drawing.Font("Arial", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label6.Location = new System.Drawing.Point(150, 431);
+            this.label6.Location = new System.Drawing.Point(150, 479);
             this.label6.Name = "label6";
             this.label6.Size = new System.Drawing.Size(83, 19);
             this.label6.TabIndex = 20;
@@ -137,7 +141,7 @@
             // 
             // phoneNo
             // 
-            this.phoneNo.Location = new System.Drawing.Point(296, 389);
+            this.phoneNo.Location = new System.Drawing.Point(296, 437);
             this.phoneNo.Multiline = true;
             this.phoneNo.Name = "phoneNo";
             this.phoneNo.Size = new System.Drawing.Size(193, 22);
@@ -147,7 +151,7 @@
             // 
             this.label5.AutoSize = true;
             this.label5.Font = new System.Drawing.Font("Arial", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label5.Location = new System.Drawing.Point(149, 390);
+            this.label5.Location = new System.Drawing.Point(149, 438);
             this.label5.Name = "label5";
             this.label5.Size = new System.Drawing.Size(84, 19);
             this.label5.TabIndex = 18;
@@ -223,7 +227,7 @@
             this.label1.AutoSize = true;
             this.label1.Font = new System.Drawing.Font("Arial Narrow", 13.8F, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label1.ForeColor = System.Drawing.SystemColors.ActiveBorder;
-            this.label1.Location = new System.Drawing.Point(276, 640);
+            this.label1.Location = new System.Drawing.Point(275, 682);
             this.label1.Name = "label1";
             this.label1.Size = new System.Drawing.Size(123, 27);
             this.label1.TabIndex = 11;
@@ -233,7 +237,7 @@
             // 
             this.linkLabel1.AutoSize = true;
             this.linkLabel1.Font = new System.Drawing.Font("Arial Narrow", 12F, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.linkLabel1.Location = new System.Drawing.Point(241, 695);
+            this.linkLabel1.Location = new System.Drawing.Point(240, 737);
             this.linkLabel1.Name = "linkLabel1";
             this.linkLabel1.Size = new System.Drawing.Size(204, 24);
             this.linkLabel1.TabIndex = 10;
@@ -246,7 +250,7 @@
             this.button1.BackColor = System.Drawing.SystemColors.ActiveCaptionText;
             this.button1.Font = new System.Drawing.Font("Arial", 13.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.button1.ForeColor = System.Drawing.SystemColors.ButtonFace;
-            this.button1.Location = new System.Drawing.Point(230, 568);
+            this.button1.Location = new System.Drawing.Point(229, 610);
             this.button1.Name = "button1";
             this.button1.Size = new System.Drawing.Size(211, 46);
             this.button1.TabIndex = 9;
@@ -254,12 +258,30 @@
             this.button1.UseVisualStyleBackColor = false;
             this.button1.Click += new System.EventHandler(this.button1_Click);
             // 
+            // studentID
+            // 
+            this.studentID.Location = new System.Drawing.Point(296, 396);
+            this.studentID.Multiline = true;
+            this.studentID.Name = "studentID";
+            this.studentID.Size = new System.Drawing.Size(193, 22);
+            this.studentID.TabIndex = 27;
+            // 
+            // label9
+            // 
+            this.label9.AutoSize = true;
+            this.label9.Font = new System.Drawing.Font("Arial", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label9.Location = new System.Drawing.Point(150, 397);
+            this.label9.Name = "label9";
+            this.label9.Size = new System.Drawing.Size(86, 19);
+            this.label9.TabIndex = 26;
+            this.label9.Text = "Student ID";
+            // 
             // signup
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.SystemColors.ActiveBorder;
-            this.ClientSize = new System.Drawing.Size(1320, 738);
+            this.ClientSize = new System.Drawing.Size(1320, 801);
             this.Controls.Add(this.panel1);
             this.Name = "signup";
             this.Text = "signup";
@@ -291,5 +313,7 @@
         private System.Windows.Forms.Label label3;
         private System.Windows.Forms.TextBox firstName;
         private System.Windows.Forms.Label label2;
+        private System.Windows.Forms.TextBox studentID;
+        private System.Windows.Forms.Label label9;
     }
 }

@@ -89,7 +89,6 @@
             this.profileButton.Size = new System.Drawing.Size(75, 70);
             this.profileButton.TabIndex = 5;
             this.profileButton.UseVisualStyleBackColor = true;
-            this.profileButton.Click += new System.EventHandler(this.profileButton_Click);
             // 
             // phoneButton
             // 
@@ -112,6 +111,7 @@
             this.homeButton.Size = new System.Drawing.Size(75, 70);
             this.homeButton.TabIndex = 3;
             this.homeButton.UseVisualStyleBackColor = true;
+            this.homeButton.Click += new System.EventHandler(this.homeButton_Click);
             // 
             // pictureBox1
             // 
